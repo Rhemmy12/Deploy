@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LOGIN PAGE</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: plum;
+        }
+        
+        form {
+            width: 350px;
+            margin: 50px auto;
+            padding: 20px;
+            background-color: #fff;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        
+        input[type="email"], input[type="text"], input[type="password"] {
+            width: 90%;
+            height: 40px;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+        }
+        
+        input[type="Login"] {
+            width: 100%;
+            height: 40px;
+            background-color:red;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        input[type="Login"]:hover {
+            background-color: #3e8e41;
+        }
+        
+        b {
+            display: block;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <form action="/login" method="post">
+        <%= error%>
+        <b>Email:</b>
+        <input type="email" placeholder="Enter a valid email address" name="email" required>
+        <br><br>
+        <!-- <b>Username:</b>
+        <input type="text" placeholder="Enter your username" name="username" required>
+        <br><br> -->
+        </b></div>
+        <b>Password:</b>
+        <input type="password" placeholder="Create password" name="password" required>
+        <br><br>
+        <input type="submit"/>
+    </form>
+</head>
+</body>
+</html>
